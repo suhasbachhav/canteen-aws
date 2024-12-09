@@ -1,0 +1,17 @@
+# "org" ensures this Service is used with the correct Serverless Framework Access Key.
+org: canteensuhas
+# "app" enables Serverless Framework Dashboard features and sharing them with other Services.
+app: canteen-aws
+# "service" is the name of this project. This will also be added to your AWS resource names.
+service: canteen-aws
+
+provider:
+  name: aws
+  runtime: nodejs22.x
+  region: ap-south-1
+
+functions:
+  api:
+    handler: server.handler
+    events:
+      - httpApi: "*"
