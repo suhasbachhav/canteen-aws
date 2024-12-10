@@ -52,14 +52,10 @@ _Note_: In current form, after deployment, your API is public and can be invoked
 After successful deployment, you can call the created application via HTTP:
 
 ```
-curl https://xxxxxxx.execute-api.us-east-1.amazonaws.com/
+https://10631v6y64.execute-api.ap-south-1.amazonaws.com/api-docs
 ```
 
-Which should result in the following response:
-
-```json
-{ "message": "Hello from root!" }
-```
+Which should result in the following response: Swagger UI page
 
 Steps to run application: 
 1. URL: https://10631v6y64.execute-api.ap-south-1.amazonaws.com/api-docs
