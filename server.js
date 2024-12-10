@@ -3,6 +3,9 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import swaggerJsdoc from 'swagger-jsdoc';
 import swaggerUi from 'swagger-ui-express';
+import cookieparser from 'cookie-parser';
+import cors from 'cors';
+
 import login from './routes/login.js';
 import departments from './routes/departments.js';
 import company from './routes/company.js';
@@ -15,7 +18,7 @@ import pizza from './routes/pizza.js';
 import tokenData from './routes/tokenData.js';
 import vendorReport from './routes/vendorReport.js';
 import todaysRecords from './routes/todaysRecord.js';
-import cors from 'cors';
+
 const app = express();
 
 app.use(cors({origin: '*'}));
@@ -26,6 +29,7 @@ app.use(
   })
 );
 app.use(bodyParser.json());
+app.use(cookieparser());
 
 app.use('/login', login);
 

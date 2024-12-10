@@ -7,7 +7,7 @@ service: canteen-aws
 
 provider:
   name: aws
-  runtime: nodejs22.x
+  runtime: nodejs20.x
   region: ap-south-1
 
 functions:
