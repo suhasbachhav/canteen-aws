@@ -61,6 +61,13 @@ Which should result in the following response:
 { "message": "Hello from root!" }
 ```
 
+Steps to run application: 
+1. URL: https://10631v6y64.execute-api.ap-south-1.amazonaws.com/api-docs
+2. Call Login method using username admin and pass: 123456
+3. Copy token from the response
+4.  Paste this token using modheader as {token: token}
+5.  And test all of the methods
+
 ### Local development
 
 The easiest way to develop and test your function is to use the `dev` command:
