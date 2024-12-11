@@ -21,6 +21,10 @@ This template configures a single function, `api`, which is responsible for hand
 
 ### Deployment
 
+In AWS RDS service create databse for mysql. 
+Connect this database using mysql workbranch and import sql file which is available in this repo.
+Use endpoint as host for connecting the database
+
 Install dependencies with:
 
 ```
